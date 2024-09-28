@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income & Expense Tracker</h1>
+        <form id="trackerForm">
+            <div>
+                <label>Description</label>
+                <input type="text" name="Description" id="Description" placeholder="required">
+            </div>
+
+            <div>
+                <label>Amount</label>
+                <input type="number" name="amount" id="amount" placeholder="required">
+            </div>
+
+            <div>
+                <label>Type</label>
+            </div>
+
+            <select id="type">
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+
+            </select>
+            <button type="submit">Add Entry</button>
+            <ul id="entrYlist"></ul>
+            <h2>Total: <span id="total">0</span></h2>
+
+            
+            <div>
+                 
+            </div>
+        </form>
+    </div>    
+</body>
+<script src="script.js"></script>
+</html>
